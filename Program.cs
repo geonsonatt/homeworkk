@@ -11,7 +11,7 @@ namespace program;
     int numberCow = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Ввод позиции столбца ");
     int numberCow1 = Convert.ToInt32(Console.ReadLine());
-    if (numberCow > mass.GetLength(0) || numberCow1 > mass.GetLength(1))
+    if (numberCow > mass.GetLength(0) || numberCow < 0 || numberCow1 > mass.GetLength(1) || numberCow1 < 0 )
     {
      Console.WriteLine("Неверно заданы значения");   
     }
